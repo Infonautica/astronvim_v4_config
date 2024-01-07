@@ -36,6 +36,12 @@ return {
         ["<S-Up>"] = { "<Nop>" },
         ["<S-Down>"] = { "<Nop>" },
 
+        -- Disable arrows navigation
+        ["<Up>"] = { "<Nop>" },
+        ["<Down>"] = { "<Nop>" },
+        ["<Left>"] = { "<Nop>" },
+        ["<Right>"] = { "<Nop>" },
+
         -- Jump to the end of line
         ["<C-e>"] = { "$" },
 
