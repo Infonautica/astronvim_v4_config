@@ -53,14 +53,19 @@ return {
         ["<C-Down>"] = { "<C-W>j", desc = "Jump to the down split" },
 
         -- Create splits
-        ["<C-\\>"] = { ":vsplit<CR>", desc = "Split vertically" },
-        ["<C-->"] = { ":split<CR>", desc = "Split horizontally" },
+        ["\\"] = { "<Nop>" },
+        ["\\\\"] = { ":vsplit<CR>", desc = "Split vertically" },
+        ["--"] = { "<cmd>split<CR>", desc = "Split horizontally" },
 
         -- Resize splits
         ["<C-S-Left>"] = { ":vertical :resize +2<CR>", desc = "Increase width of the split" },
         ["<C-S-Right>"] = { ":vertical :resize -2<CR>", desc = "Decrease width of the split" },
         ["<C-S-Up>"] = { ":resize +2<CR>", desc = "Increase height of the split" },
         ["<C-S-Down>"] = { ":resize -2<CR>", desc = "Decrease height of the split" },
+
+        -- Horizontal scroll
+        ["<z-Left>"] = { ":normal 5zh", desc = "Scroll left" },
+        ["<z-Right>"] = { ":normal 5zl", desc = "Scroll right" },
       },
       v = {
         ["<C-e>"] = { "$" }
