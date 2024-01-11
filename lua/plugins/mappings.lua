@@ -68,7 +68,11 @@ return {
         ["<z-Right>"] = { ":normal 5zl", desc = "Scroll right" },
       },
       v = {
-        ["<C-e>"] = { "$" }
+        ["<C-e>"] = { "$" },
+
+        -- Disable shift based navigation to favor <C-u> and <C-d>
+        ["<S-Up>"] = { "<Nop>" },
+        ["<S-Down>"] = { "<Nop>" },
       },
     },
   },
