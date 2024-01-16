@@ -66,6 +66,9 @@ return {
         -- Horizontal scroll
         ["<z-Left>"] = { ":normal 5zh", desc = "Scroll left" },
         ["<z-Right>"] = { ":normal 5zl", desc = "Scroll right" },
+
+        -- Quick scope and jumping to a char
+        -- ["<leader>j"]  = { "<plug>(QuickScopeToggle)" },
       },
       v = {
         ["<C-e>"] = { "$" },
