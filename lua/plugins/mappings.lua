@@ -58,8 +58,8 @@ return {
         ["--"] = { "<cmd>split<CR>", desc = "Split horizontally" },
 
         -- Resize splits
-        ["<C-S-Left>"] = { ":vertical :resize +2<CR>", desc = "Increase width of the split" },
-        ["<C-S-Right>"] = { ":vertical :resize -2<CR>", desc = "Decrease width of the split" },
+        ["<C-S-Left>"] = { ":vertical :resize -2<CR>", desc = "Increase width of the split" },
+        ["<C-S-Right>"] = { ":vertical :resize +2<CR>", desc = "Decrease width of the split" },
         ["<C-S-Up>"] = { ":resize +2<CR>", desc = "Increase height of the split" },
         ["<C-S-Down>"] = { ":resize -2<CR>", desc = "Decrease height of the split" },
 
@@ -77,6 +77,11 @@ return {
         ["<S-Up>"] = { "<Nop>" },
         ["<S-Down>"] = { "<Nop>" },
       },
+      i = {
+        ["<F1>"] = { 'copilot#Accept("<CR>")', silent = true, expr = true, replace_keycodes = false },
+        ["<F2>"] = { 'copilot#Next()', silent = true, expr = true },
+        ["<F3>"] = { 'copilot#Previous()', silent = true, expr = true },
+      }
     },
   },
 }

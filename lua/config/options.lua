@@ -11,4 +11,7 @@ vim.opt.foldcolumn = "0"
 vim.opt.swapfile = false
 vim.opt.scrolloff=5
 vim.opt.scroll=7
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
+
 -- vim.g.mapleader = " " -- sets vim.g.mapleader
