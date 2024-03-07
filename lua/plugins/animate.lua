@@ -35,6 +35,12 @@ return {
         cursor = {
           timing = animate.gen_timing.linear { duration = 80, unit = "total" },
         },
+        open = {
+          enabled = false,
+        },
+        close = {
+          enabled = false,
+        }
       }
     end,
   },

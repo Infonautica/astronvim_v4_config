@@ -37,10 +37,10 @@ return {
         ["<S-Down>"] = { "<Nop>" },
 
         -- Disable arrows navigation
-        -- ["<Up>"] = { "<Nop>" },
-        -- ["<Down>"] = { "<Nop>" },
-        -- ["<Left>"] = { "<Nop>" },
-        -- ["<Right>"] = { "<Nop>" },
+        ["<Up>"] = { "<Nop>" },
+        ["<Down>"] = { "<Nop>" },
+        ["<Left>"] = { "<Nop>" },
+        ["<Right>"] = { "<Nop>" },
 
         -- Jump to the end of line
         ["<C-e>"] = { "$" },
