@@ -7,9 +7,6 @@ return {
   opts = {
     highlights = {
       init = { -- this table overrides highlights in all themes
-        -- Normal = { QuickScopePrimary = "#ff0000" },
-        QuickScopePrimary = { bg = "#223366" },
-        -- QuickScopeSecondary = { bg = "#ffff00" },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
