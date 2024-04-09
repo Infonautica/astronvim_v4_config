@@ -8,8 +8,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup {
   spec = {
-    -- TODO: change `branch="v4"` to `version="^4"` on release
-    { "AstroNvim/AstroNvim", branch = "v4", import = "astronvim.plugins" },
+    { "AstroNvim/AstroNvim", version = "^4", import = "astronvim.plugins" },
     -- AstroCommunity: import any community modules here
     -- TODO: Remove branch v4 on release
     -- { "AstroNvim/astrocommunity", branch = "v4" },
