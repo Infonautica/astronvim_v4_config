@@ -42,6 +42,9 @@ return {
         ["<Left>"] = { "<Nop>" },
         ["<Right>"] = { "<Nop>" },
 
+        ["<C-u>"] = { "10k", desc = "Jump 10 rows up" },
+        ["<C-d>"] = { "10j", desc = "Jump 10 rows down" },
+
         -- Jump to the end of line
         ["<C-e>"] = { "$" },
 
