@@ -21,7 +21,7 @@ return {
           timing = animate.gen_timing.linear { duration = 0, unit = "total" },
         },
         scroll = {
-          timing = animate.gen_timing.linear { duration = 30, unit = "total" },
+          timing = animate.gen_timing.linear { duration = 10, unit = "total" },
           subscroll = animate.gen_subscroll.equal {
             predicate = function(total_scroll)
               if mouse_scrolled then
@@ -33,7 +33,7 @@ return {
           },
         },
         cursor = {
-          timing = animate.gen_timing.linear { duration = 80, unit = "total" },
+          timing = animate.gen_timing.linear { duration = 60, unit = "total" },
         },
         open = {
           enabled = false,
