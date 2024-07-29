@@ -1,6 +1,4 @@
--- if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- AstroCore allows you easy access to customize the default options provided in AstroNvim
+---@type LazySpec
 return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
@@ -8,8 +6,7 @@ return {
     options = {
       opt = {
         swapfile = false, -- disable swapfile
-        scrolloff = 5,
-        scroll = 5,
+        scroll = 10,
       },
     },
     -- modify core features of AstroNvim
